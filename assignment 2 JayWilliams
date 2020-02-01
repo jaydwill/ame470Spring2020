@@ -1,0 +1,65 @@
+
+   ╭────────────────────────────────────────────────────────────────╮
+   │                                                                │
+   │      New patch version of npm available! 6.13.4 → 6.13.7       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.13.7   │
+   │               Run npm install -g npm to update!                │
+   │                                                                │
+   ╰────────────────────────────────────────────────────────────────╯
+"This message occurs because "npm" was not updated on the computer to run 
+this command successfully. Once we run this latest install, we'll try the command again."
+
+experimacs-mbp:ajaxEg jaywilliams$ node server.js 
+internal/modules/cjs/loader.js:976
+  throw err;
+  ^
+  "The first step is to run the server, so when this error occurs 
+  we essentially have to backtrack and download the necessary software to bring to run the server." 
+
+ 
+
+Error: Cannot find module 'method-override'
+The module "method-override" was not specifically installed and needs to be prompted to be installed again.
+Require stack:
+- /Users/jaywilliams/Downloads/ame470Spring2020/ASSIGNMENTS/A2/ajaxEg/server.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:973:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:855:27)
+    at Module.require (internal/modules/cjs/loader.js:1033:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/Users/jaywilliams/Downloads/ame470Spring2020/ASSIGNMENTS/A2/ajaxEg/server.js:5:22)
+    at Module._compile (internal/modules/cjs/loader.js:1144:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1164:10)
+    at Module.load (internal/modules/cjs/loader.js:993:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:892:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/jaywilliams/Downloads/ame470Spring2020/ASSIGNMENTS/A2/ajaxEg/server.js'
+  ]
+}
+
+"The module "method-override" was not specifically installed and needs to be prompted to be installed again." 
+
+experimacs-mbp:ajaxEg jaywilliams$ npm install method-override
+npm WARN a2@1.0.0 No repository field.
+
++ method-override@3.0.0
+added 2 packages from 5 contributors and audited 138 packages in 0.857s
+found 0 vulnerabilities
+
+"This is an attempt to “callback” to the node server" 
+
+
+experimacs-mbp:ajaxEg jaywilliams$ node server.js 
+body-parser deprecated bodyParser: use individual json/urlencoded middlewares server.js:25:9
+body-parser deprecated undefined extended: provide extended option ../node_modules/body-parser/index.j
+
+"The “body parser” takes the data out of the body of the incoming request and separates it into different types of data. 
+Here it is looking to extract a specific option." s:105:29
+
+Simple static server listening at http://localhost:1234
+1+2/3*4
+^[
+
+“Simple static listening” means there is a data sheet ready to respond to the “client” request at: http://localhost:1234 . 
+This indicates a successful client server interaction." 
